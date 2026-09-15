@@ -18,7 +18,7 @@ export async function onRequest(context) {
     const viewerIp = request.headers.get('CF-Connecting-IP') || 'unknown';
     const secretKey = env.SECRET_KEY || 'xQ#9vL2$pM8@kR4*jT6!nW7^yC3(hF1&';
     const encryptionKeyStr = env.ENCRYPTION_KEY || 'wD@4jB9!vN2$xP7*kM5^qL8#cT3(hF1&';
-    const workerDomain = env.WORKER_DOMAIN || 'ziotv.movieszonemedia.workers.dev';
+    const workerDomain = env.WORKER_DOMAIN || 'https://nibbu.arabba.workers.dev/';
 
     try {
         // Generate HMAC token directly — no need to fetch all channels!
