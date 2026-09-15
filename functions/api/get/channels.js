@@ -4,7 +4,7 @@ export async function onRequest(context) {
     const viewerIp = request.headers.get('CF-Connecting-IP') || 'unknown';
 
     const apiKey = env.API_SECRET_KEY || 'G5*bN#8zK2@vX9$mP1^qL4!cH7&yR3(t';
-    const workerUrl = `https://ziotv.movieszonemedia.workers.dev/api/channels?client_ip=${viewerIp}`;
+    const workerUrl = `https://nibbu.arabba.workers.dev/api/channels?client_ip=${viewerIp}`;
     
     try {
         const response = await fetch(workerUrl, {
