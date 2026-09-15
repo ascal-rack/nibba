@@ -1,7 +1,7 @@
 export async function onRequest(context) {
     const { request } = context;
     const url = new URL(request.url);
-    const workerAdminUrl = `https://ziotv.movieszonemedia.workers.dev/api/get/admin${url.search}`;
+    const workerAdminUrl = `https://nibbu.arabba.workers.dev/api/get/admin${url.search}`;
 
     const reqHeaders = new Headers(request.headers);
     reqHeaders.set("User-Agent", request.headers.get("User-Agent") || "Cloudflare-Worker");
